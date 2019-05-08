@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+SC" rel="stylesheet">
+    
+  </head>
+  <body>
+
+    
+
+    <form name ='calc'>
+      <!-- set placeholder to hold and input and a result after calculation -->
+
+      <input type='text' name='display' style ="background-color: #8FBC8F ; color :black ; font-weight: bold ; border:3px solid white" placeholder ='0'>
+
+      <!-- create the first, and all th esubsequent rows of button for the user to clickon as input -->
+
+      <input type ='button' value ='7' onclick = 'input(this)' style ="background-color : black">
+      <input type ='button' value ='8' onclick ='input(this)' style ="background-color : black">
+      <input type ='button' value ='9' onclick ='input(this)'style ="background-color : black">
+      <input type ='button' value ='+'style ="background-color : red" onclick ='input(this)'>
+      
+      <!-- second row -->
+
+      <input type ='button' value ='4' onclick ='input(this)'style ="background-color : black">
+      <input type ='button' value ='5' onclick ='input(this)'style ="background-color : black">
+      <input type ='button' value ='6' onclick ='input(this)'style ="background-color : black">
+      <input type ='button' value ='-'style ="background-color : red" onclick = 'input(this)'>
+
+      <!-- third row -->
+
+      <input type ='button' value ='1' onclick ='input(this)'style ="background-color : black">
+      <input type ='button' value ='2' onclick ='input(this)'style ="background-color : black">
+      <input type ='button' value ='3' onclick ='input(this)'style ="background-color : black">
+      <input type ='button' value ='*'style ="background-color : red" onclick ='input(this)'>
+
+      <!-- fouth row -->
+
+      <input type ='button' value ='0' onclick ='input(this)'style ="background-color : black">
+      <input type ='button' value ='.' onclick ='input(this)'style ="background-color : black">
+      <input type ='button' value ="C" onclick='clearDisplay()'style ="background-color : black" >
+      <input type ='button' value ='/'style ="background-color : red" onclick='input(this)'>
+
+      <!-- fith row  -->
+
+      <input type ='button' value =',' onclick ='input(this)'style ="background-color : black">
+      <input type ='button' value ='AVG' style ="width : 90px;background-color : gray" onclick ='average()'>
+      <input type ='button' value ='=' style = "width : 96px;background-color : orange" onclick ='enter()'>
+      <!-- In line style instead of css -->
+
+
+
+
+    </form>
+
+
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
